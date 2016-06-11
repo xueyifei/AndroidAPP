@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:id="@+id/pointsShopImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/u112"/>
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/pointsShopGoodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称"/>
+            <TextView
+                android:id="@+id/pointsShopGoodsPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000积分"/>
+            <TextView
+                android:id="@+id/pointsShopGoodsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="市场参考价：50￥"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pointsShopGoodsButton"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换"
+            android:background="#ff00afff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xue2015.myandroidapp.OthersActivity">
+
+    <include layout="@layout/qcenter_head" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff9f"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每周完成一次问卷调查就能获得一次免费兑换资格"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="快去参加"
+            android:textSize="30dp"
+            android:textColor="#ffff4500"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ff00e1ff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:src="@drawable/u112"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="XXX产品带你装B带你飞"
+                android:id="@+id/textView3"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="查看"
+                android:id="@+id/textView4"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#ffff7e00">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="其他信息"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#ff8400ff">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更多信息..."
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:id="@+id/others_bottom_button_mainpage"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+             >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/main_page" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/others_bottom_button_questionnairecenter"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/questionnaire_center" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/others_bottom_button_pointshop"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/point_shop" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/others_bottom_button_push"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:clickable="false">
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/push" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.xue2015.myandroidapp.util.TitleLayout
+        android:id="@+id/changePswActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/change_psw_old"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_corner_inputbox"
+        android:hint="@string/input_old_psw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/change_psw_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_psw_old"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner_inputbox"
+        android:hint="@string/input_new_psw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/change_psw_new_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_psw_new"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner_inputbox"
+        android:hint="@string/confirm_new_psw"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_psw_new_confirm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_corner_blue"
+        android:onClick="onClickChangePsw"
+        android:text="@string/change"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

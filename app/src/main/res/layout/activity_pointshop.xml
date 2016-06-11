@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xue2015.myandroidapp.PointshopActivity">
+
+    <!--<com.example.xue2015.myandroidapp.Titlebar-->
+        <!--android:id="@+id/pointsShopActionBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <include layout="@layout/points_shop_head" />
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#739d9d9d">
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:background="@drawable/round_corner_gray"
+                    android:hint="@string/point_shop_search"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分筛选﹀"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pointsShopViewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_weight="4" />
+
+            <LinearLayout
+                android:id="@+id/pointsShopGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" />
+
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/pointsShopListView"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:layout_weight="1006.36">
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+    <!--<com.example.xue2015.myandroidapp.Bottombar-->
+        <!--android:id="@+id/pointsShopButtonBar"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:gravity="bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:id="@+id/points_shop_bottom_button_mainpage"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+             >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/main_page" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/points_shop_bottom_button_questionnairecenter"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/questionnaire_center" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/points_shop_bottom_button_pointshop"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:clickable="false">
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/point_shop" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/points_shop_bottom_button_push"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/push" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

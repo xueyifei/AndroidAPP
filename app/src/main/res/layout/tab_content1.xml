@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabLinearLayout1"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="120dp"
+        android:text="商品图片1"
+        android:textSize="30dp"
+        android:background="@drawable/u45"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="120dp"
+        android:text="商品图片2"
+        android:textSize="30dp"
+        android:background="@drawable/u45"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="120dp"
+        android:text="商品图片3"
+        android:textSize="30dp"
+        android:background="@drawable/u45"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="120dp"
+        android:text="商品图片4"
+        android:textSize="30dp"
+        android:background="@drawable/u45"/>
+
+
+
+</LinearLayout>

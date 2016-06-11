@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBar"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/mainPageBottomBar"
+        android:text="首页"
+        android:background="@drawable/u47"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/questionCenterBottomBar"
+        android:text="问卷中心"
+        android:background="@drawable/u47"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/pointsBottomBar"
+        android:text="积分商城"
+        android:background="@drawable/u47"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/othersBottomBar"
+        android:text="精彩推送"
+        android:background="@drawable/u47"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>

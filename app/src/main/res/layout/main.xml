@@ -1,0 +1,386 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head" />
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="fill_vertical|fill_horizontal" >
+            </android.support.v4.view.ViewPager>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <!-- 定义第1个标签页的内容（限时抢单） -->
+
+                <LinearLayout
+                    android:id="@+id/tab01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list_view_tab01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="10dp" >
+                    </ListView>
+                </LinearLayout>
+
+                <!-- 定义第2个标签页的内容（今日热单） -->
+
+                <LinearLayout
+                    android:id="@+id/tab02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list_view_tab02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="10dp" >
+                    </ListView>
+                </LinearLayout>
+
+                <!-- 定义第3个标签页的内容（高收益） -->
+
+                <LinearLayout
+                    android:id="@+id/tab03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list_view_tab03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="10dp" >
+                    </ListView>
+                </LinearLayout>
+
+                <!-- 定义第4个标签页的内容（滚单有奖） -->
+
+                <LinearLayout
+                    android:id="@+id/tab04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list_view_tab04"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="10dp" >
+                    </ListView>
+                </LinearLayout>
+
+                <!-- 定义第5个标签页的内容（我的钱包） -->
+
+                <LinearLayout
+                    android:id="@+id/tab05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/my_portrait"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/u434" />
+
+                        <TextView
+                            android:id="@+id/my_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="dfa快递费"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_point"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/u75" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/point"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/my_point"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1000000"
+                                android:textColor="@color/red"
+                                android:textSize="15sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/round_corner_blue"
+                                android:onClick="onClickExchange"
+                                android:text="@string/exchange"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/image_cash"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/u75" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/cash"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/my_cash"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="1000000"
+                                android:textColor="@color/red"
+                                android:textSize="15sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/round_corner_blue"
+                                android:onClick="onClickCashIn"
+                                android:text="@string/cash_in"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="30dp"
+                                android:text="@string/my_creadit_card"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/my_creadit_card"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="30dp"
+                                android:text="8888 **** **** 8888"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/my_phone_number"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/my_phone_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="187****1234"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/round_corner_blue"
+                            android:onClick="onClickCheckDetail"
+                            android:text="@string/point_detail"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffdddddd" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:id="@+id/main_page_bottom_button_mainpage"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:clickable="false" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/main_page" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/main_page_bottom_button_questionnairecenter"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/questionnaire_center" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/main_page_bottom_button_pointshop"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/point_shop" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/main_page_bottom_button_push"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/push" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

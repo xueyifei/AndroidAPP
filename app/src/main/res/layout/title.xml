@@ -1,0 +1,43 @@
+<LinearLayout 
+    android:id="@+id/linearLayoutActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="45dp"
+    android:background="#009BDF"
+    android:weightSum="5" >
+    
+    <Button
+        android:id="@+id/buttonActionBarLeft"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="5dip"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/u5"
+        android:text="返回"
+        android:textColor="#fff" />
+    
+    <TextView
+        android:id="@+id/textActionBarTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Title Text"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/buttonActionBarRight"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="5dip"
+        android:layout_weight="1"
+        android:text="Edit"
+        android:textColor="#fff" />
+
+</LinearLayout>

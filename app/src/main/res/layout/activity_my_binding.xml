@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.xue2015.myandroidapp.Titlebar
+        android:id="@+id/mybindingActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/mybindingPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_inputbox"
+            android:ems="10"
+            android:hint="@string/mybinding_phone_number"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5" >
+
+            <EditText
+                android:id="@+id/mybindingEditVeriCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/round_corner_inputbox"
+                android:hint="@string/mybinding_verify_code" />
+
+            <Button
+                android:id="@+id/mybindingButtonGetVeriCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/round_corner_blue"
+                android:text="@string/mybinding_get_verify_code" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/mybindingEditEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner_inputbox"
+            android:ems="10"
+            android:hint="@string/mybinding_email"
+            android:inputType="textEmailSubject" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/mydindingEditBankCardNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corner_inputbox"
+                android:ems="10"
+                android:hint="@string/mybinding_confirm_bankcardnum"
+                android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/mybindingToBindingCard"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="100px"
+                android:maxWidth="60px"
+                android:background="#0000"
+                android:layout_gravity="right"
+                android:src="@drawable/tobank"/>
+
+        </FrameLayout>
+
+
+
+        <Button
+            android:id="@+id/mybindingButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner_blue"
+            android:text="@string/register" />
+    </LinearLayout>
+
+</LinearLayout>

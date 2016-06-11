@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xue2015.myandroidapp.QuestionnaireCenterActivity">
+
+    <include layout="@layout/qcenter_head"
+         />
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TabHost
+                android:id="@+id/tabhost1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+
+                </LinearLayout>
+
+            </TabHost>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:id="@+id/question_center_bottom_button_mainpage"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+             >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/main_page" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/question_center_bottom_button_questionnairecenter"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:clickable="false">
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/questionnaire_center" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/question_center_bottom_button_pointshop"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/point_shop" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/left_drawer_item_line"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/question_center_bottom_button_push"
+            style="@style/main_page_bottom_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                style="@style/main_page_bottom_text"
+                android:layout_centerInParent="true"
+                android:text="@string/push" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

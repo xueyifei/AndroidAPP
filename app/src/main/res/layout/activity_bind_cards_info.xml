@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bbbbbb"
+    tools:context="com.example.xue2015.myandroidapp.BindCardsInfoActivity">
+
+    <com.example.xue2015.myandroidapp.Titlebar
+        android:id="@+id/bindCardInfoActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/bindCardInfo_img"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/u112"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_vertical|center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bindCardInfoBankName"
+                android:text="@string/bindCardInfo_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/bindCardInfoCardAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bindCardInfo_card_account"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/bindCardInfo_eg_username"/>
+
+        <TextView
+            android:id="@+id/bindCardInfoUserName"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/bindCardInfo_username"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/bindCardInfo_eg_useridentity"/>
+
+        <TextView
+            android:id="@+id/bindCardInfoUserIdentity"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/bindCardInfo_useridentity"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/bindCardInfo_eg_userphone_num"/>
+
+        <TextView
+            android:id="@+id/bindCardInfoUserPhoneNum"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/bindCardInfo_userphone_num"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bindCardInfoComfireBind"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_red"
+        android:text="@string/bindCardInfo_comfire_bind"
+        android:textColor="#fff"
+        />
+
+
+
+
+
+
+</LinearLayout>
